@@ -1,6 +1,8 @@
 public class Punto {
-
-    
+   public Punto (){
+            this.setX(0);
+            this.setY(0);
+   }
       private int x ;
         private int y ;
         public int getX() {
@@ -17,6 +19,10 @@ public class Punto {
         }
         public double modulo (){
             return Math.sqrt(this.x * this.x + this.y * this.y);
+        }
+        public Punto (int x,int y){
+            this.setX(x);
+            this.setY(y);
         }
 }
 
